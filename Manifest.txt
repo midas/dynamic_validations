@@ -4,6 +4,9 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/dynamic_validations.rb
+lib/dynamic_validations/act_methods.rb
+lib/dynamic_validations/validation_rule.rb
+lib/dynamic_validations/validations.rb
 script/console
 script/destroy
 script/generate

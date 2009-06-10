@@ -2,15 +2,18 @@
 
 http://github.com/midas/dynamic_validations/tree/master
 
+
 == DESCRIPTION:
 
 Easily make your rails app's validation configurable by the end user by storing the validation rules in the database.
+
 
 == FEATURES:
 
 * Generates the necessary validation rule table migration
 * Provides a validation rule ActiveRecord model
 * Overrides validation method for models with has_dynamic_validations macro
+
 
 == PROBLEMS:
 
@@ -23,6 +26,28 @@ Easily make your rails app's validation configurable by the end user by storing 
 == INSTALL:
 
   sudo gem install midas-dynamic_validations
+
+
+== USAGE:
+
+Add to environment file:
+
+  config.gem "guilded", :version => '0.1.9'
+
+
+In an environment initializer:
+
+  DYNAMIC_VALIDATIONS_CONFIG = {
+    :messages => {
+      :presence => "cannot be blank"
+    }
+  }
+
+
+In an ActiveRecord model:
+
+  has_dynamic_valdiations
+
 
 == LICENSE:
 
