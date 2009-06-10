@@ -6,7 +6,7 @@ require 'dynamic_validations/validations'
 #require 'dynamic_validations/validation_rule'
 
 module DynamicValidations
-  VERSION = '0.0.2'
+  VERSION = '0.0.3'
 end
 
 ActiveRecord::Base.send( :extend, DynamicValidations::ActMethods ) if defined?( ActiveRecord::Base )
