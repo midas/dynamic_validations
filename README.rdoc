@@ -32,7 +32,7 @@ Easily make your rails app's validation configurable by the end user by storing 
 
 Add to environment file:
 
-  config.gem "guilded", :version => '0.1.9'
+  config.gem "midas-dynamic_validations", :version => '00.2'
 
 
 In an environment initializer:
