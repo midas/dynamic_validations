@@ -81,11 +81,11 @@ module DynamicValidations
           #self.class.validates_each(attrs, options) do |record, attr, value|
             value = options[:tokenizer].call( value ) if value.kind_of?( String )
             unless !value.nil? and value.size.method( validity_checks[option] )[option_value]
-              record.errors.add( attr, key, :default => custom_message, :count => option_value ) 
+              self.errors.add( attr, key, :default => custom_message, :count => option_value ) 
             end
           #end
       end
-    end #def valiate_length
+    end #def validate_length
     
     def validate_numericality( *args )
       configuration = { :on => :save, :only_integer => false, :allow_nil => false }
